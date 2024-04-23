@@ -161,7 +161,7 @@ def make_concordance(stop_words: List[str], text: List[str]) -> HashTable:
 # Formats a given concordance table into the result desired by the assignment
 def make_result(cd: HashTable) -> None:
     keys = hash_keys(cd)
-    f = open("result.txt", "w+")
+    f = open("./text/result.txt", "w+")
     for key in keys:
         f.write(key + ": " + ' '.join(map(str,lookup(cd, key))) + "\n")
     f.close

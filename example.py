@@ -1,7 +1,7 @@
 from main import *
 
-stopWords = readStopWords("stopWords.txt")
-text = readText("test.txt")
+stopWords = readStopWords("./text/stopWords.txt")
+text = readText("./text/test.txt")
 mc = make_concordance(stopWords, text)
 
 make_result(mc)
